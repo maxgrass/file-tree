@@ -63,7 +63,7 @@ Example:
     <div class="thisFolder">
       <div class="folderTitle">
         <span class$="{{_determineClass(data.open, data.children)}}" on-click="toggleChildren">
-          <iron-icon icon$="{{_determineIcon(data.shared)}}"></iron-icon>
+          <iron-icon icon$="{{_determineIcon(data.folder)}}"></iron-icon>
         </span>
         <span class="name" on-click="selectFolder">{{data.name}}</span>
       </div>
@@ -117,10 +117,10 @@ Example:
     /**
      * Returns the necessary folder icon.
      *
-     * @param {boolean}, whether or not the folder is shared
+     * @param {boolean}, whether or not the object is a folder
     */
-    _determineIcon: function(shared) {
-      return shared ? 'folder-shared' : 'folder';
+    _determineIcon: function(folder) {
+      return folder ? 'folder' : 'description';
     },
 
     /**

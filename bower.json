@@ -1,8 +1,9 @@
 {
   "name": "file-tree",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "authors": [
-    "Winston Howes <winstonhowes@gmail.com>"
+    "Winston Howes <winstonhowes@gmail.com>",
+    "Max Grass <max@maxgrass.eu>"
   ],
   "description": "An element displaying a file tree.",
   "keywords": [
